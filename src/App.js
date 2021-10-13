@@ -1,9 +1,11 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import './App.css';
-// import ToDo from './components/ToDo';
+
+import ToDo from './components/ToDo';
 import List from './components/List';
 import Search from './components/Search';
+import Counter from './components/Counter';
 
 function App() {
   const [search, setSearch] = useState('');
@@ -18,20 +20,22 @@ function App() {
     setItems(data.filter(el => el.toLowerCase().includes(search.toLowerCase())))
   }, [data, search]);
 
-  /* const todos = [
+  const todos = [
     {id: 1, title: 'wash dishes', completed: false, },
     {id: 2, title: 'make dinner', completed: true, }
-  ] */
+  ]
+
   return (
     <div className="App">
       <header className="App-header">
-        {/* todos.map(item => {
-          return <ToDo todo={item} />
-        }) */}
+        {todos.map(item => {
+          return <ToDo key={new Date().toString(6) + Math.random()} todo={item} />
+        })}
         <Search value={search} onChange={(e) => setSearch(e.target.value)}>
           Find course:
         </Search>
         <List items={items} />
+        <Counter />
       </header>
     </div>
   );
