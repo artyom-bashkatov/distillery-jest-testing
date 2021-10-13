@@ -8,6 +8,7 @@ React testing tutorial with Jest. All good practice in one repo
 # Materials for education
 1. https://youtu.be/ML5egqL3YFE (simple unit-tests)
 2. https://youtu.be/sjdMBJ72M4s (complex tutorial)
+3. https://youtu.be/GLSSRtnNY0g (tutorial with fireEvent)
 
 How to interact with project:
 Install 'node_modules' and all needed packages: 'yarn install';
