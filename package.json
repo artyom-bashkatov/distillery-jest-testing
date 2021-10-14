@@ -3,12 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@reduxjs/toolkit": "^1.6.2",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "classnames": "^2.3.1",
+    "eslint-plugin-cypress": "^2.12.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-redux": "^7.2.5",
     "react-scripts": "4.0.3",
     "react-test-renderer": "^17.0.2",
     "web-vitals": "^1.0.1"
@@ -17,12 +20,16 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:cypress": "start-server-and-test start http://localhost:3000 cypress",
+    "cypress": "npx cypress open",
+    "cypress:run": "npx cypress run --spec 'cypress/integration/cypress-tutorial/App.e2e.js'",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
+      "react-app/jest",
+      "plugin:cypress/recommended"
     ]
   },
   "browserslist": {
@@ -39,6 +46,7 @@
   },
   "devDependencies": {
     "cypress": "^8.6.0",
-    "jest": "26.6.0"
+    "jest": "26.6.0",
+    "start-server-and-test": "^1.14.0"
   }
 }

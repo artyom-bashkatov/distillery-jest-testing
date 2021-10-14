@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 describe('Testing something on Google', () => {
   it('I can search something', () => {
     cy.visit('https://google.com');
