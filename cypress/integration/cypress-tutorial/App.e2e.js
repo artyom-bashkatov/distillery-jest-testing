@@ -27,4 +27,8 @@ describe('App E2E', () => {
 
     cy.get('li').should('have.length', 1);
   });
+
+  it('should toggle status', () => {
+    cy.get('li input').should('not.have.checked').click().should('have.checked');
+  })
 })

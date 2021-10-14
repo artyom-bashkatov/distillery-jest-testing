@@ -9,6 +9,8 @@ React testing tutorial with Jest. All good practice in one repo
 1. https://youtu.be/ML5egqL3YFE (simple unit-tests)
 2. https://youtu.be/sjdMBJ72M4s (complex tutorial)
 3. https://youtu.be/GLSSRtnNY0g (tutorial with fireEvent)
+4. https://youtu.be/k7Z5_jJPOlU (cypress introduction basics)
+5. https://youtu.be/N0Eqlz5G-Jo (cypress small example)
 
 How to interact with project:
 Install 'node_modules' and all needed packages: 'yarn install';
