@@ -20,9 +20,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "test:cypress": "start-server-and-test start http://localhost:3000 cypress",
+    "test:cypress": "start-server-and-test start http://localhost:3000 cypress:run",
     "cypress": "npx cypress open",
-    "cypress:run": "npx cypress run --spec 'cypress/integration/cypress-tutorial/App.e2e.js'",
+    "cypress:run": "npx cypress run --spec 'cypress/integration/cypress-tutorial/App.requests.js'",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

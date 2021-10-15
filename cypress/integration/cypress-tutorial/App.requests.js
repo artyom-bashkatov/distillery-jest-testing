@@ -1,4 +1,10 @@
 describe('Basic API Testing - Part #1', () => {
+  
+  
+  beforeEach(() => {
+    cy.request('GET', 'https://gorest.co.in/public/v1/todos').as('todos')
+  })
+  
   it('Body length - TEST', () => {
     cy.request('https://gorest.co.in/public/v1/todos')
     .its('body.data')
@@ -173,5 +179,12 @@ describe('Basic API Testing - Part #1', () => {
     .each(value => {
       expect(value).to.have.all.keys('id', 'user_id', 'title', 'due_on', 'status')
     })
+  })
+
+  it('Using Alias request', () => {
+      cy.get('@todos').should(response => {
+          expect(response.body.data).to.have.length(20);
+          expect(response).to.have.property('headers');
+      })
   })
 });
