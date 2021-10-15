@@ -12,6 +12,7 @@ React testing tutorial with Jest. All good practice in one repo
 4. https://youtu.be/k7Z5_jJPOlU (cypress introduction basics)
 5. https://youtu.be/N0Eqlz5G-Jo (cypress small example)
 6. https://youtu.be/bcO2E6XFJCY (cypress requests)
+7. https://youtu.be/uNd9HxIHptY (another one good tutorial about e2e with Cypress)
 
 How to interact with project:
 Install 'node_modules' and all needed packages: 'yarn install';
